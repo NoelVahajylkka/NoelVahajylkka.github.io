@@ -7,7 +7,7 @@
 
 Use `git status` to list all new or modified files that haven't yet been committed.
 
-![Tässä ois tämmönen hauska kuva.](https://cdn.discordapp.com/attachments/1156893459026825279/1156893489125134458/pfrrrt.png?ex=6516a085&is=65154f05&hm=500728faee77cab7f7115e050d901e3013083d25014c9c522a04da54c8ed070c&)
+![Tässä ois tämmönen hauska kuva.](https://images.contentstack.io/v3/assets/blt93c07aad6c2c008a/bltf8328fede5bb25b9/63ea71690b8fda0835e10e0f/Gragas_2.jpg?auto=webp&width=1920&height=1080)
 
 - [x] Add header 1
 - [x] Add header 2
