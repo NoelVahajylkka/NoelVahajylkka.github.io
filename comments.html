@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comment Form</title>
+    <title>Comments</title>
     <link rel="stylesheet" href="styles.css"> <!-- Include your stylesheet here if needed -->
 </head>
 <body>
@@ -17,7 +17,7 @@
 
     <section class="section">
         <h2>Leave a Comment</h2>
-        <form action="process_comment.php" method="post"> <!-- Update the 'action' attribute with the correct processing script -->
+        <form action="/submit_comment" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -28,7 +28,15 @@
             <textarea id="comment" name="comment" rows="4" required></textarea>
             
             <button type="submit">Submit</button>
-        </form>
+        </form> 
+    </section>
+
+    <!-- Display comments here -->
+    <section class="section">
+        <h2>Comments</h2>
+        <ul id="comments-list">
+            <!-- Comments will be displayed here using JavaScript -->
+        </ul>
     </section>
 
     <script src="script.js"></script> <!-- Include your JavaScript file here if needed -->
