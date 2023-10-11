@@ -19,5 +19,3 @@ Use `git status` to list all new or modified files that haven't yet been committ
 This site was built using [GitHub Pages](https://pages.github.com/).
 
 [Ei kannata ehkä klikata tätä](https://www.youtube.com/watch?v=f8mL0_4GeV0)
-
-[Go to Custom Page](index.html)
