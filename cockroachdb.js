@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000; // You can change the port as needed
 
 const db = pgp({
-  connectionString: 'postgresql://noel:<ENTER-SQL-USER-PASSWORD>@terra-puma-10917.8nj.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full'
+  connectionString: 'postgresql://noel:<bQs9IpnKX_7Y2AQy6YpOng>@terra-puma-10917.8nj.cockroachlabs.cloud:26257/comments?sslmode=verify-full'
   // Replace 'your_database_connection_string' with the actual connection string
 });
 
