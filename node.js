@@ -1,49 +1,44 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+const mysql = require('mysql');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-app.use(bodyParser.json());
-
-// Replace with your MongoDB Atlas connection string
-const mongoURI = 'mongodb+srv://nerfnoksu:<wEGET7m1H0PZCURj>@cluster0.imcu25s.mongodb.net/?retryWrites=true&w=majority';
-
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('MongoDB connected'))
-    .catch(err => console.error(err));
-
-const Comment = mongoose.model('Comment', {
-    name: String,
-    comment: String
+// Database connection setup
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'Porkkana123',
+  database: 'website'
 });
 
-app.get('/api/comments', (req, res) => {
-    Comment.find({}, (err, comments) => {
-        if (err) {
-            console.error(err);
-            res.status(500).send('Internal Server Error');
-        } else {
-            res.json(comments);
-        }
-    });
+db.connect(err => {
+  if (err) throw err;
+  console.log('Connected to the MySQL database');
 });
 
-app.post('/api/comments', (req, res) => {
-    const { name, comment } = req.body;
-    const newComment = new Comment({ name, comment });
+// API endpoints for comments
+app.use(express.json());
 
-    newComment.save((err, savedComment) => {
-        if (err) {
-            console.error(err);
-            res.status(500).send('Internal Server Error');
-        } else {
-            res.json(savedComment);
-        }
-    });
+app.post('/comments', (req, res) => {
+  const { author, text } = req.body;
+  const timestamp = new Date();
+
+  const comment = { author, text, timestamp };
+
+  db.query('INSERT INTO comments SET ?', comment, (err, result) => {
+    if (err) throw err;
+    res.json(comment);
+  });
+});
+
+app.get('/comments', (req, res) => {
+  db.query('SELECT * FROM comments', (err, results) => {
+    if (err) throw err;
+    res.json(results);
+  });
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });
