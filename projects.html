@@ -21,18 +21,18 @@
 
     <section id="projects" class="section">
         <h2>My Projects</h2>
-        <!-- Button to play Video 1 -->
-    <button id="playVideo1">Play Video 1</button>
-
-    <!-- Button to play Video 2 -->
-    <button id="playVideo2">Play Video 2</button>
-
-    <!-- Video Player with Video 1 preloaded -->
-    <video id="videoPlayer" controls>
-        <source id="videoSource" src="video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
+        <div class="video-container">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button id="playVideo1">Play Video 1</button>
+            <button id="playVideo2">Play Video 2</button>
+        </div>
+    </div>
     <script>
         const videoPlayer = document.getElementById("videoPlayer");
         const videoSource = document.getElementById("videoSource");
