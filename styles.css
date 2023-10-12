@@ -117,4 +117,5 @@ button-container {
 
 button {
     margin: 10px;
+    align-items: center;
 }
