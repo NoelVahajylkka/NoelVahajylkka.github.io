@@ -1,8 +1,6 @@
 function showAlert() {
     alert('hähää!');
-}
-
-const playButton = document.getElementById("popup-button");
+    const playButton = document.getElementById("popup-button");
         const audioElement = document.getElementById("audio-element");
 
         // Add a click event listener to the button
@@ -17,3 +15,4 @@ const playButton = document.getElementById("popup-button");
                 playButton.innerHTML = "Play Audio";
             }
         });
+}
