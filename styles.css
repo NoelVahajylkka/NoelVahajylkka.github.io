@@ -36,34 +36,9 @@ h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #fff;
+    margin-top: 10px;
 }
 
-.portfolio-item {
-    margin-bottom: 40px;
-    padding: 20px;
-    background: #1e1e1e;
-    border: 1px solid #444;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.portfolio-item h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-    color: #39ff14;
-}
-
-.portfolio-item p {
-    font-size: 1.2em;
-    color: #aaa;
-}
-
-/* Update the navigation bar for a futuristic look */
 nav {
     background-color: #1e1e1e;
     padding: 10px 0;
@@ -181,4 +156,30 @@ input[type="submit"]:hover {
     font-family: 'Courier New', monospace;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid #f5f5f5;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #333030;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td:nth-child(2) {
+    text-align: right;
 }
