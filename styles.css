@@ -101,7 +101,7 @@ button:hover {
 }
 
 h2 {
-    margin-bottom: 10px; /* Adjust the bottom margin (10px) to your preference */
+    margin-bottom: 10px;
 }
 
 .section {
@@ -129,12 +129,13 @@ input[type="text"],
             width: 95%;
             padding: 10px;
             margin-top: 5px;
-            display: block; /* Display inputs as block elements */
+            display: block;
+            background-color: #797979;
         }
 
         textarea {
-            height: 150px; /* Set the desired height for the text area */
-            resize: none; /* Disable resizing */
+            height: 150px;
+            resize: none;
         }
 
 input[type="submit"] {
@@ -144,7 +145,7 @@ input[type="submit"] {
             border: none;
             cursor: pointer;
             display: block;
-            margin: 0 auto; /* Center submit button */
+            margin: 0 auto;
             margin-top: 20px;
             font-family: 'Courier New', monospace;
         }
