@@ -72,13 +72,14 @@ nav a:hover {
 }
 
 .video-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 10px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+}
+
+video {
+    max-width: 80%;
+    margin: 10px auto 0 auto;
 }
 
 .button-container {
