@@ -13,16 +13,26 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="comments.html">Comments</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="contact" class="section">
+</head>
+<body>
+    <div class="contact-form">
         <h2>Contact Me</h2>
-        <p>You can contact me at: <a href="mailto:noksuv13@gmail.com">noksuv13@gmail.com</a></p>
-    </section>
 
-    <script src="script.js"></script>
+        <form id="contact-form" action="process_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
 </body>
 </html>
