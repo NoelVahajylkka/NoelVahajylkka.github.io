@@ -106,7 +106,7 @@ nav a:hover {
 .video-container {
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,4 +119,8 @@ nav a:hover {
 
 button {
     margin: 10px;
+}
+
+h2 {
+    margin-bottom: 10px; /* Adjust the bottom margin (10px) to your preference */
 }
