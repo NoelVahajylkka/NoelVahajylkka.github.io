@@ -4,8 +4,11 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -106,9 +109,9 @@ nav a:hover {
 }
 
 .video-container {
-    width: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .button-container {
@@ -117,5 +120,4 @@ nav a:hover {
 
 button {
     margin: 10px;
-    align-items: center;
 }
