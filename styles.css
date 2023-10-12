@@ -119,6 +119,16 @@ nav a:hover {
 
 button {
     margin: 10px;
+    background-color: #333333;
+    color:#39ff14;
+    
+}
+
+button:hover {
+    margin: 10px;
+    background-color: #39ff14;
+    color:#333333;
+    
 }
 
 h2 {
