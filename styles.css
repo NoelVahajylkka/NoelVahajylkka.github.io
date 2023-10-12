@@ -125,7 +125,7 @@ h2 {
     margin-bottom: 10px; /* Adjust the bottom margin (10px) to your preference */
 }
 
-.text-box {
+.section {
     background-color: #333333;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -133,4 +133,8 @@ h2 {
     margin: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+}
+
+a {
+    color: #39FF14;
 }
