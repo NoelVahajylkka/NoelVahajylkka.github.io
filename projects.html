@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <!-- Button to play Video 1 -->
+    <button id="playVideo1">Play Video 1</button>
+
+    <!-- Button to play Video 2 -->
+    <button id="playVideo2">Play Video 2</button>
+
+    <!-- Video Player with Video 1 preloaded -->
+    <video id="videoPlayer" controls>
+        <source id="videoSource" src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        const videoPlayer = document.getElementById("videoPlayer");
+        const videoSource = document.getElementById("videoSource");
+        const playVideo1 = document.getElementById("playVideo1");
+        const playVideo2 = document.getElementById("playVideo2");
+
+        playVideo1.addEventListener("click", function() {
+            videoSource.src = "video1.mp4";
+            videoPlayer.load();
+            videoPlayer.play();
+        });
+
+        playVideo2.addEventListener("click", function() {
+            videoSource.src = "video2.mp4";
+            videoPlayer.load();
+            videoPlayer.play();
+        });
+    </script>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>You can reach me at noksuv13@gmail.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

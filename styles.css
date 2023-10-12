@@ -95,3 +95,13 @@ nav a:hover {
     transition: transform 0.3s;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
+
+#videoPlayer {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
+
+button {
+    margin: 10px;
+}
