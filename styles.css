@@ -89,13 +89,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* Add hover effects and animations for a futuristic touch */
-.portfolio-item:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}
-
 .container {
     text-align: center;
     background-color: #fff;
@@ -121,6 +114,7 @@ button {
     margin: 10px;
     background-color: #333333;
     color:#39ff14;
+    font-family: 'Courier New', monospace;
     
 }
 
@@ -128,6 +122,7 @@ button:hover {
     margin: 10px;
     background-color: #39ff14;
     color:#333333;
+    font-family: 'Courier New', monospace;
     
 }
 
