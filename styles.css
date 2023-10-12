@@ -106,9 +106,9 @@ nav a:hover {
 }
 
 .video-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
+    width: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .button-container {
