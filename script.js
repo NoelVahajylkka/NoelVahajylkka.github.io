@@ -53,4 +53,4 @@ function startAudio() {
     audioPlayer.play();
 }
 
-document.addEventListener("DOMContentLoaded", startAudio);
+startAudio();
