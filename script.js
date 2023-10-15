@@ -1,6 +1,6 @@
 const audioElement = document.getElementById("audio-element");
-document.getElementById("hedelma").innerHTML = hedelmat;
-const hedelmat = [""]
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits;
 
 function showAlert() {
     audioElement.play();
@@ -9,5 +9,5 @@ function showAlert() {
 
 function hedelma() {
     fruits.push("Lemon");
-    document.getElementById("hedelma").innerHTML = hedelmat;
+    document.getElementById("demo").innerHTML = fruits;
 }
