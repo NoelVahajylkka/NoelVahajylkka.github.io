@@ -24,10 +24,6 @@ if (window.location.href.endsWith("kissat.html")) {
     setInterval(switchGIF,5000);
 }
 
-if (window.location.href.endsWith("kissat.html")) {
-    startAudio();
-}
-
 playVideo1.addEventListener("click", function () {
     videoSource.src = "visualresource/video1.mp4";
     videoPlayer.load();
@@ -70,9 +66,4 @@ function switchGIF() {
     } else {
         currentIndex = 0;
     }
-}
-
-function startAudio() {
-    const audioPlayer = document.getElementById("audioPlayer");
-    audioPlayer.play();
 }
