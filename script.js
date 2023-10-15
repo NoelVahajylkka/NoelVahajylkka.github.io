@@ -22,7 +22,5 @@ function addRandomFruit() {
 function updateFruitDisplay() {
     var fruitDisplayElement = document.getElementById("fruits");
     fruitDisplayElement.textContent = fruits.join(", ");
+    document.getElementById("fruits").innerHTML = fruits;
 }
-
-var addFruitButton = document.getElementById("addFruitButton");
-addFruitButton.addEventListener("click", addRandomFruit);
