@@ -47,3 +47,10 @@ function switchGIF() {
 
 switchGIF();
 setInterval(switchGIF, 5000);
+
+function startAudio() {
+    const audioPlayer = document.getElementById("audioPlayer");
+    audioPlayer.play();
+}
+
+document.addEventListener("DOMContentLoaded", startAudio);
