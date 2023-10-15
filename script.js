@@ -16,6 +16,18 @@ const videoSource = document.getElementById("videoSource");
 const playVideo1 = document.getElementById("playVideo1");
 const playVideo2 = document.getElementById("playVideo2");
 
+if (window.location.href.endsWith("kissat.html")) {
+    switchGIF;
+}
+
+if (window.location.href.endsWith("kissat.html")) {
+    setInterval(switchGIF,5000);
+}
+
+if (window.location.href.endsWith("kissat.html")) {
+    startAudio();
+}
+
 playVideo1.addEventListener("click", function () {
     videoSource.src = "visualresource/video1.mp4";
     videoPlayer.load();
@@ -27,13 +39,6 @@ playVideo2.addEventListener("click", function () {
     videoPlayer.load();
     videoPlayer.play();
 });
-
-function startAudio() {
-    const audioPlayer = document.getElementById("audioPlayer");
-    audioPlayer.play();
-}
-
-startAudio();
 
 function showAlert() {
     audioElement.play();
@@ -62,11 +67,12 @@ function switchGIF() {
 
     if (currentIndex < gifImages.length - 1) {
         currentIndex++;
-    }
-    else {
+    } else {
         currentIndex = 0;
     }
 }
 
-switchGIF();
-setInterval(switchGIF, 5000);
+function startAudio() {
+    const audioPlayer = document.getElementById("audioPlayer");
+    audioPlayer.play();
+}
