@@ -3,7 +3,10 @@ const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];
 var fruits = [];
 const gifImages = [
     "image1.gif",
-    "image2.gif"
+    "image2.gif",
+    "image3.gif",
+    "image4.gif",
+    "image5.gif"
 ];
 let currentIndex = 0;
 const gifImage = document.getElementById("gifImage");
@@ -37,4 +40,4 @@ function switchGIF() {
 
 switchGIF();
 
-setInterval(switchGIF, 10000);
+setInterval(switchGIF, 5000);
