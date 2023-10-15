@@ -48,13 +48,6 @@ function switchGIF() {
 switchGIF();
 setInterval(switchGIF, 5000);
 
-function startAudio() {
-    const audioPlayer = document.getElementById("audioPlayer");
-    audioPlayer.play();
-}
-
-startAudio();
-
 const videoPlayer = document.getElementById("videoPlayer");
 const videoSource = document.getElementById("videoSource");
 const playVideo1 = document.getElementById("playVideo1");
