@@ -214,4 +214,5 @@ td:nth-child(2) {
 #gifImage {
     max-width: 100%;
     max-height: 80vh;
+    background-color: inherit;
 }
