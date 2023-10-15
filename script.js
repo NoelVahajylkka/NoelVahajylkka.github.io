@@ -1,5 +1,5 @@
 const audioElement = document.getElementById("audio-element");
-const fruitA = ["Apple", "Banana", "Orange", "Strawberry", "Grapes", "Pineapple"];;
+const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];;
 var fruits = [];
 
 function showAlert() {
