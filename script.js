@@ -38,11 +38,18 @@ function switchGIF() {
 
     if (currentIndex < gifImages.length - 1) {
         currentIndex++;
-    } else {
+    } 
+    else {
         currentIndex = 0;
     }
 }
 
 switchGIF();
-
 setInterval(switchGIF, 5000);
+const audioPlayer = document.getElementById("audioPlayer");
+
+audioPlayer.addEventListener('ended', function() {
+    audioPlayer.play();
+});
+
+audioPlayer.play();
