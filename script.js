@@ -11,6 +11,29 @@ const gifImages = [
 const audioPlayer = document.getElementById("audioPlayer");
 let currentIndex = 0;
 const gifImage = document.getElementById("gifImage");
+const videoPlayer = document.getElementById("videoPlayer");
+const videoSource = document.getElementById("videoSource");
+const playVideo1 = document.getElementById("playVideo1");
+const playVideo2 = document.getElementById("playVideo2");
+
+playVideo1.addEventListener("click", function () {
+    videoSource.src = "visualresource/video1.mp4";
+    videoPlayer.load();
+    videoPlayer.play();
+});
+
+playVideo2.addEventListener("click", function () {
+    videoSource.src = "visualresource/video2.mp4";
+    videoPlayer.load();
+    videoPlayer.play();
+});
+
+function startAudio() {
+    const audioPlayer = document.getElementById("audioPlayer");
+    audioPlayer.play();
+}
+
+startAudio();
 
 function showAlert() {
     audioElement.play();
@@ -39,7 +62,7 @@ function switchGIF() {
 
     if (currentIndex < gifImages.length - 1) {
         currentIndex++;
-    } 
+    }
     else {
         currentIndex = 0;
     }
@@ -47,20 +70,3 @@ function switchGIF() {
 
 switchGIF();
 setInterval(switchGIF, 5000);
-
-const videoPlayer = document.getElementById("videoPlayer");
-const videoSource = document.getElementById("videoSource");
-const playVideo1 = document.getElementById("playVideo1");
-const playVideo2 = document.getElementById("playVideo2");
-
-playVideo1.addEventListener("click", function() {
-    videoSource.src = "video1.mp4";
-    videoPlayer.load();
-    videoPlayer.play();
-});
-
-playVideo2.addEventListener("click", function() {
-    videoSource.src = "video2.mp4";
-    videoPlayer.load();
-    videoPlayer.play();
-});
