@@ -8,6 +8,7 @@ const gifImages = [
     "image4.gif",
     "image5.gif"
 ];
+const audioPlayer = document.getElementById("audioPlayer");
 let currentIndex = 0;
 const gifImage = document.getElementById("gifImage");
 
@@ -46,10 +47,3 @@ function switchGIF() {
 
 switchGIF();
 setInterval(switchGIF, 5000);
-const audioPlayer = document.getElementById("audioPlayer");
-
-audioPlayer.addEventListener('ended', function() {
-    audioPlayer.play();
-});
-
-audioPlayer.play();
