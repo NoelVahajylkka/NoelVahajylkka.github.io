@@ -2,11 +2,11 @@ const audioElement = document.getElementById("audio-element");
 const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];
 var fruits = [];
 const gifImages = [
-    "resources.visual/image1.gif",
-    "resources.visual/image2.gif",
-    "resources.visual/image3.gif",
-    "resources.visual/image4.gif",
-    "resources.visual/image5.gif"
+    "visualresource/image1.gif",
+    "visualresource/image2.gif",
+    "visualresource/image3.gif",
+    "visualresource/image4.gif",
+    "visualresource/image5.gif"
 ];
 const audioPlayer = document.getElementById("audioPlayer");
 let currentIndex = 0;
@@ -54,3 +54,20 @@ function startAudio() {
 }
 
 startAudio();
+
+const videoPlayer = document.getElementById("videoPlayer");
+const videoSource = document.getElementById("videoSource");
+const playVideo1 = document.getElementById("playVideo1");
+const playVideo2 = document.getElementById("playVideo2");
+
+playVideo1.addEventListener("click", function() {
+    videoSource.src = "video1.mp4";
+    videoPlayer.load();
+    videoPlayer.play();
+});
+
+playVideo2.addEventListener("click", function() {
+    videoSource.src = "video2.mp4";
+    videoPlayer.load();
+    videoPlayer.play();
+});

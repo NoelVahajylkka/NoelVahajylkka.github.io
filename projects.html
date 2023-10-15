@@ -22,8 +22,7 @@
         <h2>My Projects</h2>
         <div class="video-container">
             <video controls>
-                <source id="videoSource" src="resources.visual/video1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source id="videoSource" src="video1.mp4" type="video/mp4">
             </video>
         </div>
         
@@ -32,24 +31,6 @@
             <button id="playVideo2">Project 2</button>
         </div>
     </div>
-    <script>
-        const videoPlayer = document.getElementById("videoPlayer");
-        const videoSource = document.getElementById("videoSource");
-        const playVideo1 = document.getElementById("playVideo1");
-        const playVideo2 = document.getElementById("playVideo2");
-
-        playVideo1.addEventListener("click", function() {
-            videoSource.src = "resources.visual/video1.mp4";
-            videoPlayer.load();
-            videoPlayer.play();
-        });
-
-        playVideo2.addEventListener("click", function() {
-            videoSource.src = "resources.visual/video2.mp4";
-            videoPlayer.load();
-            videoPlayer.play();
-        });
-    </script>
     </section>
 
     <script src="script.js"></script>
