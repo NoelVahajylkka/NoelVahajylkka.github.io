@@ -1,6 +1,12 @@
 const audioElement = document.getElementById("audio-element");
-const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];;
+const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];
 var fruits = [];
+const gifImages = [
+    "image1.gif",
+    "image2.gif"
+];
+let currentIndex = 0;
+const gifImage = document.getElementById("gifImage");
 
 function showAlert() {
     audioElement.play();
@@ -24,26 +30,11 @@ function updateFruitDisplay() {
     document.getElementById("fruits").innerHTML = fruits;
 }
 
-function createRaindrop() {
-    const raindrop = document.createElement('div');
-    raindrop.className = 'drop';
-    raindrop.style.left = Math.random() * window.innerWidth + 'px';
-    raindrop.style.top = '0';
-    document.body.appendChild(raindrop);
-
-    // Animate the raindrop falling from the top to the bottom
-    const animationDuration = Math.random() * 3 + 2; // Random duration between 2 to 5 seconds
-    raindrop.style.transition = `top ${animationDuration}s linear`;
-    raindrop.style.top = window.innerHeight + 'px';
-
-    // Remove the raindrop after the animation completes
-    setTimeout(() => {
-        raindrop.remove();
-    }, animationDuration * 1000);
+function switchGIF() {
+    gifImage.src = gifImages[currentIndex];
+    currentIndex = (currentIndex + 1) % gifImages.length;
 }
 
-function startRain() {
-    setInterval(createRaindrop, 200); // Create a new raindrop every 200 milliseconds
-}
+switchGIF();
 
-window.addEventListener('load', startRain);
+setInterval(switchGIF, 10000);
