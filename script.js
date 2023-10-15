@@ -1,7 +1,6 @@
 const audioElement = document.getElementById("audio-element");
 const fruitA = ["Apple", "Banana", "Orange", "Strawberry", "Grapes", "Pineapple"];;
 var fruits = [];
-document.getElementById("fruits").innerHTML = fruitA;
 
 function showAlert() {
     audioElement.play();
