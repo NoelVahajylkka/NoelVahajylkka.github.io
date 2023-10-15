@@ -35,7 +35,12 @@ function updateFruitDisplay() {
 
 function switchGIF() {
     gifImage.src = gifImages[currentIndex];
-    currentIndex = (currentIndex + 1) % gifImages.length;
+
+    if (currentIndex === 0) {
+        currentIndex = 1;
+    } else {
+        currentIndex = 0;
+    }
 }
 
 switchGIF();
