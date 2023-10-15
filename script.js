@@ -2,11 +2,11 @@ const audioElement = document.getElementById("audio-element");
 const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];
 var fruits = [];
 const gifImages = [
-    "image1.gif",
-    "image2.gif",
-    "image3.gif",
-    "image4.gif",
-    "image5.gif"
+    "resources.visual/image1.gif",
+    "resources.visual/image2.gif",
+    "resources.visual/image3.gif",
+    "resources.visual/image4.gif",
+    "resources.visual/image5.gif"
 ];
 const audioPlayer = document.getElementById("audioPlayer");
 let currentIndex = 0;

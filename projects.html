@@ -22,7 +22,7 @@
         <h2>My Projects</h2>
         <div class="video-container">
             <video controls>
-                <source id="videoSource" src="video1.mp4" type="video/mp4">
+                <source id="videoSource" src="resources.visual/video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -39,13 +39,13 @@
         const playVideo2 = document.getElementById("playVideo2");
 
         playVideo1.addEventListener("click", function() {
-            videoSource.src = "video1.mp4";
+            videoSource.src = "resources.visual/video1.mp4";
             videoPlayer.load();
             videoPlayer.play();
         });
 
         playVideo2.addEventListener("click", function() {
-            videoSource.src = "video2.mp4";
+            videoSource.src = "resources.visual/video2.mp4";
             videoPlayer.load();
             videoPlayer.play();
         });
