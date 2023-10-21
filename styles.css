@@ -219,3 +219,8 @@ td:nth-child(2) {
     padding: 10px;
     margin: 20px auto;
 }
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (min-width: 769px) {
+}

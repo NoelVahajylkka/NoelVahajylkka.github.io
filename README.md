@@ -22,11 +22,13 @@ Semantic HTML:n section-, header- ja nav-elementtejä on käytetty runsaasti siv
 Erilaisia värejä ja fontteja on käytetty nettisivua tehdessä ja ne voi tarkastaa styles.css-tiedostosta
 
 2. Use of classes and IDs to style specific elements.
-Esimerkiksi nappien tyylit on tehty classeja käyttämällä ja senkin voi katsoa styles.css-tiedostosta
+Esimerkiksi section-elementtien tyylit on tehty class selectoria käyttämällä
 
-3.
+3. Implementation of responsive design elements.
 
-4.
+
+4. Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)
+Flexiä on käytetty esimerkiksi yläpalkissa, sekä videosoittimessa
 
 5.
 
