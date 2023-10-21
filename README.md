@@ -48,6 +48,7 @@ Funktioita on käytetty esimerkiksi index.html:n hedelmänarpomisfunktiossa, sek
 
 4. Advanced logic, looping through data, and dynamic DOM updates.
 
+DOM-manipulaatiota 
 
 5.
 
