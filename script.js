@@ -1,6 +1,9 @@
+const hobbies = ["Reading", "Gaming", "Cooking", "Hiking", "Painting"];
+
 const audioElement = document.getElementById("audio-element");
 const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];
 var fruits = [];
+
 const gifImages = [
     "visualresource/image1.gif",
     "visualresource/image2.gif",
@@ -8,6 +11,7 @@ const gifImages = [
     "visualresource/image4.gif",
     "visualresource/image5.gif"
 ];
+
 const audioPlayer = document.getElementById("audioPlayer");
 let currentIndex = 0;
 const gifImage = document.getElementById("gifImage");
@@ -21,7 +25,7 @@ if (window.location.href.endsWith("kissat.html")) {
 }
 
 if (window.location.href.endsWith("kissat.html")) {
-    setInterval(switchGIF,5000);
+    setInterval(switchGIF, 5000);
 }
 
 playVideo1.addEventListener("click", function () {
@@ -66,4 +70,36 @@ function switchGIF() {
     } else {
         currentIndex = 0;
     }
+}
+
+function Character(name, age, hobby) {
+    this.name = name;
+    this.age = age;
+    this.hobby = hobby;
+}
+
+async function generateRandomCharacter() {
+    try {
+        const response = await fetch('https://randomuser.me/api/');
+        const data = await response.json();
+
+        const user = data.results[0];
+        const randomName = user.name.first;
+        const randomAge = Math.floor(Math.random() * 101);
+        const randomHobby = hobbies[Math.floor(Math.random() * hobbies.length)];
+
+        return { name: randomName, age: randomAge, hobby: randomHobby };
+    } catch (error) {
+        console.error('Error fetching data from the API:', error);
+    }
+}
+
+async function generateCharacter() {
+        const randomCharacter = await generateRandomCharacter();
+        const characterOutput = document.getElementById("characterOutput");
+        characterOutput.innerHTML = "Random Character:<br>";
+        characterOutput.innerHTML += "Name: " + randomCharacter.name + "<br>";
+        characterOutput.innerHTML += "Age: " + randomCharacter.age + "<br>";
+        characterOutput.innerHTML += "Hobby: " + randomCharacter.hobby + "<br>";
+        await new Promise(resolve => setTimeout(resolve, 10000));
 }
