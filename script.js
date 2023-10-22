@@ -1,8 +1,6 @@
 const hobbies = ["Reading", "Gaming", "Cooking", "Hiking", "Painting"];
 
 const audioElement = document.getElementById("audio-element");
-const fruitA = ["🍎", "🍌", "🍊", "🍓", "🍇", "🍍"];
-var fruits = [];
 
 const gifImages = [
     "visualresource/image1.gif",
@@ -43,23 +41,6 @@ playVideo2.addEventListener("click", function () {
 function showAlert() {
     audioElement.play();
     alert('hähää!');
-}
-
-function getRandomFruit() {
-    var randomIndex = Math.floor(Math.random() * fruitA.length);
-    return fruitA[randomIndex];
-}
-
-function addRandomFruit() {
-    var randomFruit = getRandomFruit();
-    fruits.push(randomFruit);
-    updateFruitDisplay();
-}
-
-function updateFruitDisplay() {
-    var fruitDisplayElement = document.getElementById("fruits");
-    fruitDisplayElement.textContent = fruits.join(", ");
-    document.getElementById("fruits").innerHTML = fruits;
 }
 
 function switchGIF() {

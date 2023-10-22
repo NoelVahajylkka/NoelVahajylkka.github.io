@@ -43,28 +43,28 @@
 - Muita DOM-manipulaattoreita on käytetty myös esimeriksi projects.html:n videoiden toistossa
 
 ### 3. Use of arrays, objects and functions.
-- Arrayta on käytetty index.html:n hedelmänarpomisfunktiossa
-- Objekteja on käytetty index.html:n satunnaishahmogeneraattorissa
-- Funktioita on käytetty esimerkiksi index.html:n hedelmänarpomisfunktiossa, sekä kissat.html:n GIFien vaihtelussa
+- Arrayta on käytetty index.html:n satunnaishenkilögeneraattorissa
+- Objekteja on käytetty index.html:n satunnaishenkilögeneraattorissa
+- Funktioita on käytetty esimerkiksi index.html:n satunnaishenkilögeneraattorissa, sekä kissat.html:n GIFien vaihtelussa
 
 ### 4. Advanced logic, looping through data, and dynamic DOM updates.
 - Esimerkiksi getElementById-metodia on käytetty projects.html-tiedoston videosoittimessa, sekä index.html-tiedoston Click me -napissa, koodi löytyy script.js-tiedostosta
 
 ### 5. Consistent use of Object-Oriented JavaScript principles.
-- Konstruktoreita on käytetty esimerkiksi index.html:n satunnaishahmogeneraattorissa
+- Konstruktoreita on käytetty esimerkiksi index.html:n satunnaishenkilögeneraattorissa
 
 ## Asynchronous operations
 ### 1. Use of timers.
 - Ajastimia on käytetty kissat.html:n GIFien vaihtamisessa, koodi löytyy script.js-tiedostosta
 
 ### 2. Succesful implementation of an AJAX call or Fetch.
-- Fetchiä on käytetty index.html:n satunnaishahmogeneraattorissa satunnaisen etunimen luomiseen, koodi löytyy script.js-tiedostosta
+- Fetchiä on käytetty index.html:n satunnaishenkilögeneraattorissa satunnaisen etunimen luomiseen, koodi löytyy script.js-tiedostosta
 
 ### 3. Data from the asynchronous call is displayed on the webpage.
 - Ylemmässä kohdassa mainittu Fetch palauttaa satunnaisen etunimen joka näytetään nettisivulla.
 
 ### 4. Error handling is implemented (for failed API calls, etc.).
-- Contact.html:n contact form antaa virheen, jos formissa on tyhjiä kenttiä, tai sähköpostiosoite on viallinen. Index.html:n satunnaishahmogeneraattori antaa myös virheen jos API Call etunimen hakemiseen epäonnistuu.
+- Contact.html:n contact form antaa virheen, jos formissa on tyhjiä kenttiä, tai sähköpostiosoite on viallinen. Index.html:n satunnaishenkilögeneraattori antaa myös virheen jos API Call etunimen hakemiseen epäonnistuu.
 
 ### 5. Effective use of asynchronous data to enhance user experience (like filtering, sorting).
 -
